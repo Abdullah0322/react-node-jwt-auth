@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>This is a Sign up Page</title>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+
+    <style>
+        
+       
+      .sign {
+        height: 70px;
+        background-color: rgb(0, 211, 88);
+        text-align: center;
+        color: white;
+        padding-top: 15px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        margin-top: 30%;
+      }
+      .i1 {
+        border-radius: 20px;
+        width: 80%;
+        margin-left: 12%;
+        margin-top: 10%;
+        height: 40px;
+        padding-left: 20px;
+
+        border: black;
+        box-shadow: 0 0 3px #1670be;
+        outline-offset: 0px;
+        outline: none;
+      }
+      .i2 {
+        border-radius: 20px;
+        width: 80%;
+        margin-left: 12%;
+        margin-top: 5%;
+        height: 40px;
+        padding-left: 20px;
+        box-shadow: 0 0 3px #1670be;
+        outline-offset: 0px;
+        outline: none;
+
+        border: black;
+      }
+      .container {
+        background-color: whitesmoke;
+        width: 70;
+        
+      }
+      .forget {
+        padding-left: 150px;
+        font-size: small;
+        margin-top: 2%;
+        color: lightseagreen;
+      }
+      .b1 {
+        background-color: rgb(0, 211, 88);
+        border-radius: 20px;
+        width: 80%;
+        height: 40px;
+
+        margin-left: 15%;
+        border: black;
+        color: white;
+      }
+      .p2 {
+        padding-top: 30px;
+        align-content: center;
+        padding-left: 120px;
+      }
+      .b2 {
+        border: none;
+
+        padding-left: 100px;
+        width: 80%;
+        border-color: white;
+        background: none;
+      }
+
+      .signup {
+        color: rgb(0, 211, 88);
+      }
+
+      #message {
+  display:none;
+  background: #f1f1f1;
+  color: #000;
+  position: relative;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+#message p {
+  padding: 10px 35px;
+  font-size: 12px;
+}
+
+#message h3{
+
+    font-size: 12px;
+}
+/* Add a green text color and a checkmark when the requirements are right */
+.valid {
+  color: green;
+}
+
+.valid:before {
+  position: relative;
+  left: -35px;
+  content: "✔";
+}
+
+/* Add a red text color and an "x" when the requirements are wrong */
+.invalid {
+  color: red;
+}
+
+.invalid:before {
+  position: relative;
+  left: -35px;
+  content: "✖";
+}
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4">
+          <h3 class="sign">Sign Up</h3>
+        </div>
+        <div class="col-sm-4"></div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4">
+          <form onsubmit="store()">
+            <input
+              type="text"
+              class="i1"
+              id="uname"
+              name="uname"
+              placeholder="Email"
+              required
+            />
+           
+            <input
+              type="password"
+              class="i2"
+              id="psw"
+              name="psw"
+              placeholder="Password"
+              pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+              title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+              required
+            />
+            <br>
+            <input type="checkbox"  onclick="myFunction()">Show Password
+            <div id="message">
+                <h3>Password must contain the following:</h3>
+                <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+                <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+                <p id="number" class="invalid">A <b>number</b></p>
+                <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+              </div>
+           
+            <p class="forget">Forget Username and Password?</p>
+            <button class="b1" type="submit" >Sign up</button>
+          </form>
+        </div>
+        <div class="col-sm-4"></div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4">
+          <a href="login">
+            <button class="b2">
+              Already have an account? <span class="signup">Sign In</span>
+            </button></a
+          >
+        </div>
+        <div class="col-sm-4"></div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="jquery-1.11.3.min.js"></script>
+    <script
+      type="text/javascript"
+      language="javascript"
+      src="login.js"
+    ></script>
+  </body>
+</html>

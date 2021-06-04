@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>This is a Login Page</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+
+
+    
+<style>
+
+    .sign{
+
+height: 70px;
+background-color: rgb(0, 211, 88);
+text-align: center;
+color: white;
+padding-top: 15px;
+border-top-left-radius: 20px;
+border-top-right-radius: 20px;
+margin-top: 30%;
+
+    }
+    .i1{
+
+        border-radius: 20px;
+        width: 80%;
+        margin-left: 12%;
+        margin-top: 10%;
+        height: 40px;
+        padding-left: 20px;
+      
+        border: black;
+        box-shadow: 0 0 3px #1670BE;
+        outline-offset: 0px;
+    outline: none;
+        
+    }
+    .i2{
+
+border-radius: 20px;
+width: 80%;
+margin-left: 12%;
+margin-top: 5%;
+height: 40px;
+padding-left: 20px;
+box-shadow: 0 0 3px #1670BE;
+outline-offset: 0px;
+    outline: none;
+
+border: black;
+
+
+}
+.container{
+
+
+    background-color: whitesmoke;
+    width: 70;
+}
+.forget{
+    padding-left: 150px;
+    font-size: small;
+    margin-top: 2%;
+    color: lightseagreen;
+
+}
+.b1{
+    background-color: rgb(0, 211, 88);
+    border-radius: 20px;
+width: 80%;
+height: 40px;
+
+margin-left: 15%;
+border: black;
+color: white;
+
+}
+.p2{
+
+
+padding-top: 30px;
+align-content: center;
+padding-left: 120px
+
+
+}
+.b2{
+
+
+    border: none;
+    
+   padding-left: 100px;
+    width: 80%;
+    border-color: white;
+    background: none;
+   
+}
+ 
+ .signup{
+
+     color: rgb(0, 211, 88);
+ }
+</style>
+
+
+  </head>
+
+  <body>
+    
+    <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            
+          </div>
+          <div class="col-sm-4 ">
+            <h3 class="sign "> Sign In</h3>
+           
+          </div>
+          <div class="col-sm-4">
+           
+          </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-4">
+              
+            </div>
+            <div class="col-sm-4 ">
+                <form onsubmit="return false">
+                    <input type="text"  class="i1" id="uname" name="uname" placeholder="Email">
+                    <input type="text"  class="i2" id="psw" name="psw " placeholder="Password">
+                  </form>
+              
+               
+            </div>
+            <div class="col-sm-4">
+             
+            </div>
+          </div>
+          
+          
+          <div class="row">
+            <div class="col-sm-4">
+              
+            </div>
+            <div class="col-sm-4 ">
+              
+            <p class="forget"> Forget Username and Password?</p>
+            </div>
+            <div class="col-sm-4">
+             
+            </div>
+
+            <div class="row">
+                <div class="col-sm-4">
+                  
+                </div>
+                <div class="col-sm-4 ">
+                  
+               <button class="b1" type="submit" onClick="check()"> Sign In </button>
+                </div>
+                <div class="col-sm-4">
+                 
+                </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-4">
+              
+            </div>
+            <div class="col-sm-4 ">
+              
+       <a href="signup" > <button class="b2" >  Dont have an Account ? <span class="signup">Sign up</span>  </button></a>  
+           
+            </div>
+            <div class="col-sm-4">
+           
+            </div>
+      </div>
+     
+
+      </div>
+      <script type="text/javascript" src="jquery-1.11.3.min.js"></script>
+      <script type="text/javascript" language="javascript" src="login.js"></script>
+
+
+
+  </body>
+
+  </html>
